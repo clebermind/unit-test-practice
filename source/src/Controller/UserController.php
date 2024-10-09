@@ -75,7 +75,7 @@ class UserController extends AbstractController
                 throw new Exception('Invalid filter value');
         }
 
-        return $data;
+        return [...$data];
     }
 
     private function getFilterUsers(): FilterUsers
